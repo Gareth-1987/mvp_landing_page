@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <!-- sm md lg xl -->
+      <!-- 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 -->
+
+      <img
+        src="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        class="img-fluid"
+      />
+
+      <!-- <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+          allowfullscreen
+        ></iframe>
+      </div>-->
+
+      <h1>MVP Landing</h1>
+      <p class="lead">
+        Welcome to MVP landing. We hope you launch your project or idea this
+        way!
+      </p>
+      {% if added %}
+      <div class="alert alert-warning">
+        Thank you for joining, we'll be in touch!
+      </div>
+      {% endif %} {% include 'form.html' %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
